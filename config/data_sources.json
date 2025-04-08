@@ -1,0 +1,66 @@
+{
+    "api_keys": {
+        "alpha_vantage": "YOUR_ALPHA_VANTAGE_KEY",
+        "news_api": "YOUR_NEWS_API_KEY",
+        "twitter": "YOUR_TWITTER_API_KEY"
+    },
+    "market_data": {
+        "sources": [
+            "yahoo",
+            "nse",
+            "moneycontrol"
+        ],
+        "yahoo": {
+            "enabled": true
+        },
+        "nse": {
+            "enabled": true
+        },
+        "moneycontrol": {
+            "enabled": true,
+            "mapping": {
+                "RELIANCE": "reliance-industries-ltd",
+                "TCS": "tata-consultancy-services-ltd",
+                "INFY": "infosys-ltd"
+            }
+        }
+    },
+    "financial_statements": {
+        "sources": [
+            "moneycontrol"
+        ],
+        "moneycontrol": {
+            "enabled": true
+        }
+    },
+    "news_social": {
+        "sources": [
+            "news_api",
+            "twitter"
+        ],
+        "news_api": {
+            "enabled": true,
+            "keywords": [
+                "stock",
+                "market",
+                "finance",
+                "economy"
+            ]
+        },
+        "twitter": {
+            "enabled": false
+        }
+    },
+    "corporate_actions": {
+        "sources": [
+            "bse",
+            "nse"
+        ],
+        "bse": {
+            "enabled": true
+        },
+        "nse": {
+            "enabled": true
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "india": {
+        "nifty50": [
+            {
+                "symbol": "RELIANCE.NS",
+                "name": "Reliance Industries Ltd.",
+                "sector": "Energy"
+            },
+            {
+                "symbol": "TCS.NS",
+                "name": "Tata Consultancy Services Ltd.",
+                "sector": "Technology"
+            },
+            {
+                "symbol": "HDFC.NS",
+                "name": "HDFC Bank Ltd.",
+                "sector": "Banking"
+            },
+            {
+                "symbol": "INFY.NS",
+                "name": "Infosys Ltd.",
+                "sector": "Technology"
+            },
+            {
+                "symbol": "SBIN.NS",
+                "name": "State Bank of India",
+                "sector": "Banking"
+            }
+        ]
+    }
+}

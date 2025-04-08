@@ -1,0 +1,89 @@
+{
+    "technical_analysis": {
+        "indicators": [
+            "SMA",
+            "EMA",
+            "RSI",
+            "MACD",
+            "Bollinger Bands"
+        ],
+        "sma_periods": [
+            20,
+            50,
+            200
+        ],
+        "ema_periods": [
+            12,
+            26
+        ],
+        "rsi_period": 14,
+        "macd_parameters": {
+            "fast_period": 12,
+            "slow_period": 26,
+            "signal_period": 9
+        },
+        "bollinger_parameters": {
+            "window": 20,
+            "num_std_dev": 2
+        }
+    },
+    "fundamental_analysis": {
+        "metrics": [
+            "P/E",
+            "P/B",
+            "ROE",
+            "Debt-to-Equity",
+            "Dividend Yield"
+        ],
+        "thresholds": {
+            "good_pe": 15,
+            "good_pb": 3,
+            "good_roe": 15,
+            "good_debt_equity": 1,
+            "good_dividend_yield": 3
+        }
+    },
+    "sentiment_analysis": {
+        "sources": [
+            "news",
+            "twitter"
+        ],
+        "lookback_days": 30,
+        "keywords_weight": {
+            "positive": [
+                "growth",
+                "profit",
+                "success",
+                "innovation",
+                "increase"
+            ],
+            "negative": [
+                "loss",
+                "decline",
+                "debt",
+                "lawsuit",
+                "decrease"
+            ]
+        }
+    },
+    "risk_assessment": {
+        "market_risk_weight": 0.4,
+        "credit_risk_weight": 0.3,
+        "geopolitical_risk_weight": 0.3
+    },
+    "prediction": {
+        "models": [
+            "linear",
+            "lstm",
+            "transformer"
+        ],
+        "prediction_horizon": 30,
+        "train_test_split": 0.8,
+        "features": [
+            "close",
+            "volume",
+            "technical_indicators",
+            "sentiment"
+        ]
+    }
+}
