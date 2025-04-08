@@ -43,13 +43,13 @@ def start_backend():
 
 def start_frontend():
     """Start the frontend React development server."""
-    # Get the path to the stockgpt-frontend directory (one level up)
-    frontend_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'stockgpt-frontend'))
+    # Get the path to the frontend directory
+    frontend_dir = os.path.join(os.path.dirname(__file__), "frontend")
     
     # Check if frontend directory exists
     if not os.path.exists(frontend_dir):
         logger.warning(f"Frontend directory '{frontend_dir}' not found. Skipping frontend startup.")
-        logger.info("To create a basic frontend, run: 'npx create-react-app stockgpt-frontend' in the parent directory")
+        logger.info("To create a basic frontend, run: 'npx create-react-app frontend' in the stockgpt directory")
         return None
         
     try:
